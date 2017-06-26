@@ -1,62 +1,186 @@
-[26/Jun/2017 21:58:36] "GET /elections/ HTTP/1.1" 200 784
-Not Found: /elections/results
-[26/Jun/2017 21:58:43] "GET /elections/results HTTP/1.1" 404 2894
-[26/Jun/2017 21:59:12] "GET /admin/ HTTP/1.1" 302 0
-[26/Jun/2017 21:59:12] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1683
-[26/Jun/2017 21:59:20] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1843
-[26/Jun/2017 22:00:17] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1844
-[26/Jun/2017 22:00:20] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
-[26/Jun/2017 22:00:21] "GET /admin/ HTTP/1.1" 200 4265
-[26/Jun/2017 22:00:21] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
-[26/Jun/2017 22:00:21] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
-[26/Jun/2017 22:00:22] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
-[26/Jun/2017 22:00:50] "GET /admin/auth/group/add/ HTTP/1.1" 200 8691
-[26/Jun/2017 22:00:50] "GET /static/admin/css/forms.css HTTP/1.1" 200 7750
-[26/Jun/2017 22:00:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[26/Jun/2017 22:00:50] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6055
-[26/Jun/2017 22:00:50] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
-[26/Jun/2017 22:00:50] "GET /static/admin/js/actions.js HTTP/1.1" 200 6259
-[26/Jun/2017 22:00:50] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7693
-[26/Jun/2017 22:00:50] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
-[26/Jun/2017 22:00:50] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5204
-[26/Jun/2017 22:00:50] "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 62474
-[26/Jun/2017 22:00:50] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 11202
-[26/Jun/2017 22:00:50] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
-[26/Jun/2017 22:00:50] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 247597
-[26/Jun/2017 22:00:51] "GET /static/admin/js/core.js HTTP/1.1" 200 8171
-[26/Jun/2017 22:00:51] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
-[26/Jun/2017 22:00:51] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
-[26/Jun/2017 22:00:51] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
-[26/Jun/2017 22:00:51] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
-[26/Jun/2017 22:01:07] "GET /admin/ HTTP/1.1" 200 4265
-[26/Jun/2017 22:01:10] "GET /admin/elections/candidate/ HTTP/1.1" 200 3206
-[26/Jun/2017 22:01:10] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6100
-[26/Jun/2017 22:01:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[26/Jun/2017 22:01:10] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
-[26/Jun/2017 22:01:13] "GET /admin/elections/candidate/add/ HTTP/1.1" 200 6875
-[26/Jun/2017 22:01:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[26/Jun/2017 22:01:31] "POST /admin/elections/candidate/add/ HTTP/1.1" 302 0
-[26/Jun/2017 22:01:31] "GET /admin/elections/candidate/ HTTP/1.1" 200 4394
-[26/Jun/2017 22:01:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[26/Jun/2017 22:01:42] "GET /admin/elections/candidate/1/change/ HTTP/1.1" 200 7117
-[26/Jun/2017 22:01:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[26/Jun/2017 22:01:46] "GET /admin/ HTTP/1.1" 200 4592
-Not Found: /
-[26/Jun/2017 22:01:51] "GET / HTTP/1.1" 404 2055
-Not Found: /
-[26/Jun/2017 22:01:54] "GET / HTTP/1.1" 404 2055
-[26/Jun/2017 22:02:03] "GET /elections/ HTTP/1.1" 200 975
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 26, 2017 - 21:58:27
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
 System check identified some issues:
 
 WARNINGS:
 ?: (urls.W001) Your URL pattern '^$' uses include with a regex ending with a '$'. Remove the dollar from the regex to avoid problems including URLs.
 
 System check identified 1 issue (0 silenced).
-[26/Jun/2017 22:02:31] "GET / HTTP/1.1" 200 975
+[27/Jun/2017 05:02:53] "GET / HTTP/1.1" 200 1220
+Not Found: /areas/USA/
+[27/Jun/2017 05:02:54] "GET /areas/USA/ HTTP/1.1" 404 2076
+Performing system checks...
+
+June 27, 2017 - 05:02:50
+Django version 1.9, using settings 'database_project.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:08:25.302323) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:08:25.302323) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /areas/USA/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/workspace/elections/views.py", line 31, in areas
+    return render(request,'elections/area.html',context)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 514, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 33: 'csrf', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[27/Jun/2017 05:08:25] "GET /areas/USA/ HTTP/1.1" 500 126137
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:13:54.336940) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:13:54.336940) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /areas/USA/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/workspace/elections/views.py", line 31, in areas
+    return render(request,'elections/area.html',context)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 514, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 33: 'csrf', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[27/Jun/2017 05:13:54] "GET /areas/USA/ HTTP/1.1" 500 126185
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:17:10.604907) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:17:10.604907) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:17:10] "GET /areas/USA/ HTTP/1.1" 200 1156
+Forbidden (CSRF token missing or incorrect.): /polls/1/
+[27/Jun/2017 05:17:17] "POST /polls/1/ HTTP/1.1" 403 2274
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:18:55.151869) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:18:55.151869) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:18:55] "GET /areas/USA/ HTTP/1.1" 200 1156
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:18:58.600227) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:18:58.600227) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:18:58] "GET /areas/USA/ HTTP/1.1" 200 1156
+[27/Jun/2017 05:19:04] "GET / HTTP/1.1" 200 1220
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:19:07.999045) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:19:07.999045) while time zone support is active.
+  RuntimeWarning)
+
+Internal Server Error: /areas/USA/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/workspace/elections/views.py", line 31, in areas
+    return render(request,'elections/area.html',context)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
+    return Template(self.engine.get_template(template_name, dirs), self)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 514, in parse
+    raise self.error(token, e)
+TemplateSyntaxError: Invalid block tag on line 33: 'csrf', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+[27/Jun/2017 05:19:08] "GET /areas/USA/ HTTP/1.1" 500 126184
+[27/Jun/2017 05:20:39] "GET /admin/elections/poll/ HTTP/1.1" 200 4349
+[27/Jun/2017 05:20:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 05:20:41] "GET /admin/ HTTP/1.1" 200 5767
+[27/Jun/2017 05:20:43] "GET /admin/elections/choice/ HTTP/1.1" 200 3185
+[27/Jun/2017 05:20:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 05:20:45] "GET /admin/ HTTP/1.1" 200 5767
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:25:30.124546) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:25:30.124546) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:25:30] "GET /areas/USA/ HTTP/1.1" 200 1154
+Forbidden (CSRF token missing or incorrect.): /polls/1/
+[27/Jun/2017 05:25:32] "POST /polls/1/ HTTP/1.1" 403 2274
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:26:17.675224) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:26:17.675224) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:26:17] "GET /areas/USA/ HTTP/1.1" 200 1248
+[27/Jun/2017 05:26:19] "POST /polls/1/ HTTP/1.1" 302 0
+Not Found: /areas/USA/results
+[27/Jun/2017 05:26:19] "GET /areas/USA/results HTTP/1.1" 301 0
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:26:19.958708) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:26:19.958708) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:26:19] "GET /areas/USA/results/ HTTP/1.1" 200 563
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 05:27:01.238026) while time zone support is active.
+  RuntimeWarning)
+
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 05:27:01.238026) while time zone support is active.
+  RuntimeWarning)
+
+[27/Jun/2017 05:27:01] "GET /areas/USA/ HTTP/1.1" 200 1230

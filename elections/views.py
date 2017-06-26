@@ -69,16 +69,7 @@ def create_user(request):
 	id = request.POST['id']
 	password = request.POST['password']
 	
-	user = User(id=id,password=password,authority=)
+	user = User(id=id,password=password,authority=authority)
 	user.save()
 	return render(request,'elections/result.html')
 
-	#str = ''
-	#for candidate in candidate:
-	#	str += "{} 기호 {}번 ({})<br>".format(candidate.name,
-	#		candidate.party_number,
-	#		candidate.area)
-	#	str += candidate.introduction+"</p>"
-
-	#return HttpResponse(str)
-	
