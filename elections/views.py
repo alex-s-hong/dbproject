@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
@@ -8,7 +9,7 @@ import datetime
 
 # Create your views here.
 def index(request):
-	candidate = Candidate.objects.all()
+	candidates = Candidate.objects.all()
 	context = {'candidates': candidates}
 	return render(request, 'elections/index.html', context)
 

@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+from elections.views import index
+from home.views import post_list
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include('elections.urls')),
-    url(r'', include('home.urls')),
+    url(r'^elections/', include('elections.urls')),
+    #url(r'', post_list,name='home'),
 ]
