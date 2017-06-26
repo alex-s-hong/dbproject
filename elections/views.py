@@ -2,12 +2,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
-from .models import Candidate, Poll, Choice
+from .models import Candidate, Poll, Choice, User
+from django.views.decorators.csrf import csrf_exempt
+
+
 
 import datetime
 
 
-# Create your views here.
+# Create your views here
 def index(request):
 	candidates = Candidate.objects.all()
 	context = {'candidates': candidates}
@@ -30,6 +33,7 @@ def areas(request, area):
 def polls(request,poll_id):
 	poll = Poll.objects.get(pk=poll_id)
 	selection = request.POST['choice']
+	
 
 	try:
 		choice = Choice.objects.get(poll_id = poll_id, candidate_id = selection)
@@ -59,8 +63,14 @@ def results(request, area):
         
     return render(request, 'elections/result.html', context)
 
-
-
+@csrf_exempt
+def create_user(request):
+	#import pdb;pdb.set_trace()
+	id = request.POST['id']
+	password = request.POST['password']
+	user = User(id=id,password=password)
+	user.save()
+	return render(request,'elections/result.html')
 
 	#str = ''
 	#for candidate in candidate:
