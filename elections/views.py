@@ -68,7 +68,8 @@ def create_user(request):
 	#import pdb;pdb.set_trace()
 	id = request.POST['id']
 	password = request.POST['password']
-	user = User(id=id,password=password)
+	
+	user = User(id=id,password=password,authority=)
 	user.save()
 	return render(request,'elections/result.html')
 
