@@ -25,9 +25,11 @@
     {% for result in poll_results %}
     <tr>
         <td> {{result.start_date.year}}/ {{result.start_date.month}}/{{result.start_date.day}}~
-        {{result.end_date.year}}/{{result.end_date.month}}/{{result.end_date.day}} </td>
-        <td> 후보1 지지율</td>
-        <td> 후보2 지지율</td>
+        {{result.end_date.year}}/{{result.end_date.month}}/{{result.end_date.day}} 
+        </td>
+        {% for rate in result.rates %}
+        <td> {{rate}}% </td> 
+        {% endfor %}
     </tr>  
     {% endfor %}
     <tbody>

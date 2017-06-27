@@ -1,13 +1,15 @@
 # -*- coding:utf-8 -*-
-from django.shortcuts import render
+from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from .models import Candidate, Poll, Choice, User
 from django.views.decorators.csrf import csrf_exempt
-
-
-
 import datetime
+from django.db.models import Sum
+
+from django.contrib.auth.decorators import login_required
+from django.contrib import auth
+from django.template.context import RequestContext
 
 
 # Create your views here
@@ -55,7 +57,19 @@ def results(request, area):
         result = {}
         result['start_date'] = poll.start_date
         result['end_date'] = poll.end_date
+        total_votes = Choice.objects.filter(poll_id = poll.id).aggregate(Sum('votes'))
+        result['total_votes'] = total_votes['votes__sum']
         
+        rates = []
+        for candidate in candidates:
+        	try:
+	        	choice = Choice.objects.get(poll_id = poll.id, candidate_id = candidate.id)
+	        	rates.append(
+	        		round(choice.votes * 100/result['total_votes'],2)
+	        		)
+        	except:
+        		rates.append(0)
+        result['rates'] = rates
         poll_results.append(result)
    
     context = {'candidates': candidates, 'area' :area,
@@ -73,3 +87,30 @@ def create_user(request):
 	user.save()
 	return render(request,'elections/result.html')
 
+
+
+def login(request):
+	return render_to_response('login.html', locals(), RequestContext(request))
+
+def authenticate(request):
+	user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
+	if user == None:
+		return HttpResponse('username or password error')
+	
+	auth.login(request, user)
+	return HttpResponseRedirect(request.POST.get('next', '/') or '/')
+
+def logout(request):
+	auth.logout(request)
+	return HttpResponseRedirect('/')
+
+def signup(request):
+	return render_to_response('signup.html', locals(), RequestContext(request))
+
+def create(request):
+	user = User.objects.create_user(username=request.POST['username'], 
+									email=request.POST['email'],
+									password=request.POST['password'])
+	user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
+	auth.login(request, user)
+	return HttpResponseRedirect(request.POST.get('next', '/') or '/')

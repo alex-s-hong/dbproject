@@ -23,6 +23,12 @@ class User(models.Model):
     id = models.CharField(max_length=128,primary_key=True)
     password = models.CharField(max_length=255)
     name = models.CharField(max_length=64)
+    
+    user_birth_month = models.IntegerField()
+    user_birth_day = models.IntegerField()
+    user_birth_year = models.IntegerField()
+
+    
     authority = models.IntegerField()
 
 class Choice (models.Model):
