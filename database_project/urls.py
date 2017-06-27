@@ -23,9 +23,5 @@ from home.views import post_list
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('elections.urls')),
-'''    url(r'^accounts/login/', auth_views.login, name='login', kwargs = {'template.name':'login.html'}),
-    url(r'^accounts.logout/',auth_views.logout, name='logout', kwargs = {'next_page': settings.LOGIN_URL,}),
-'''    
-    
-'''    url(r'', post_list,name='home'),'''
+    url(r'', post_list,name='home')
 ]

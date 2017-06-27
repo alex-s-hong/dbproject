@@ -9,15 +9,18 @@ from django.db.models import Sum
 
 from django.contrib.auth.decorators import login_required
 from django.contrib import auth
+from django.contrib.auth.models import User as auth_user
 from django.template.context import RequestContext
 
 
+@csrf_exempt
 # Create your views here
 def index(request):
 	candidates = Candidate.objects.all()
 	context = {'candidates': candidates}
 	return render(request, 'elections/index.html', context)
 
+@csrf_exempt
 def areas(request, area):
 	today = datetime.datetime.now()
 	try:
@@ -32,7 +35,9 @@ def areas(request, area):
 	'poll': poll}
 	return render(request,'elections/area.html',context)
 
+@csrf_exempt
 def polls(request,poll_id):
+	#import pdb;pdb.set_trace()
 	poll = Poll.objects.get(pk=poll_id)
 	selection = request.POST['choice']
 	
@@ -46,7 +51,8 @@ def polls(request,poll_id):
 		choice.save()
 
 	return HttpResponseRedirect("/areas/{}/results".format(poll.area))
-
+	
+@csrf_exempt
 def results(request, area):
     candidates = Candidate.objects.filter(area = area)
 
@@ -80,37 +86,49 @@ def results(request, area):
 @csrf_exempt
 def create_user(request):
 	#import pdb;pdb.set_trace()
+	print request.user.username
 	id = request.POST['id']
 	password = request.POST['password']
 	
-	user = User(id=id,password=password,authority=authority)
+	user = User(id=id,password=password)
 	user.save()
 	return render(request,'elections/result.html')
 
 
-
+@csrf_exempt
 def login(request):
-	return render_to_response('login.html', locals(), RequestContext(request))
+	return render_to_response('elections/login.html', locals(), RequestContext(request))
 
+@csrf_exempt
 def authenticate(request):
+	#import pdb;pdb.set_trace()
 	user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
 	if user == None:
 		return HttpResponse('username or password error')
 	
 	auth.login(request, user)
 	return HttpResponseRedirect(request.POST.get('next', '/') or '/')
-
+	
+@csrf_exempt
 def logout(request):
 	auth.logout(request)
 	return HttpResponseRedirect('/')
-
+	
+@csrf_exempt
 def signup(request):
-	return render_to_response('signup.html', locals(), RequestContext(request))
+	return render_to_response('elections/signup.html', locals(), RequestContext(request))
 
+@csrf_exempt
 def create(request):
-	user = User.objects.create_user(username=request.POST['username'], 
+	user = User(username=request.POST['username'], 
 									email=request.POST['email'],
-									password=request.POST['password'])
+									password=request.POST['password'],
+									authority=request.POST['authorization'])
+	user.save()
+	user = auth_user.objects.create_user(request.POST['username'],
+									request.POST['email'],
+									request.POST['password']
+									) 
 	user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
 	auth.login(request, user)
 	return HttpResponseRedirect(request.POST.get('next', '/') or '/')

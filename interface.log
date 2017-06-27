@@ -1,355 +1,128 @@
-[27/Jun/2017 14:14:06] "GET / HTTP/1.1" 200 1220
-[27/Jun/2017 14:14:09] "GET /admin/ HTTP/1.1" 200 5767
+[27/Jun/2017 21:11:59] "GET /admin/ HTTP/1.1" 200 6934
+[27/Jun/2017 21:12:04] "GET /admin/auth/user/ HTTP/1.1" 200 6887
+[27/Jun/2017 21:12:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:12:04] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[27/Jun/2017 21:12:05] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[27/Jun/2017 21:12:05] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[27/Jun/2017 21:12:05] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[27/Jun/2017 21:12:07] "GET /admin/ HTTP/1.1" 200 6934
 Performing system checks...
 
 System check identified no issues (0 silenced).
-June 27, 2017 - 14:13:55
-Django version 1.9, using settings 'database_project.settings'
+June 27, 2017 - 21:11:56
+Django version 1.11.2, using settings 'database_project.settings'
 Starting development server at http://0.0.0.0:8080/
 Quit the server with CONTROL-C.
-[27/Jun/2017 14:27:33] "GET / HTTP/1.1" 200 1220
-/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 14:27:35.410439) while time zone support is active.
-  RuntimeWarning)
-
-/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 14:27:35.410439) while time zone support is active.
-  RuntimeWarning)
-
-[27/Jun/2017 14:27:35] "GET /areas/USA/ HTTP/1.1" 200 1230
-[27/Jun/2017 14:27:37] "POST /polls/1/ HTTP/1.1" 302 0
-[27/Jun/2017 14:27:37] "GET /areas/USA/results HTTP/1.1" 200 888
-[27/Jun/2017 14:31:36] "GET /admin/elections/candidate/ HTTP/1.1" 200 4621
-[27/Jun/2017 14:31:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:31:39] "GET /admin/elections/candidate/2/change/ HTTP/1.1" 200 7116
-[27/Jun/2017 14:31:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:31:41] "GET /admin/elections/candidate/ HTTP/1.1" 200 4621
-[27/Jun/2017 14:31:44] "GET /admin/elections/candidate/add/ HTTP/1.1" 200 6875
-[27/Jun/2017 14:31:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:32:10] "POST /admin/elections/candidate/add/ HTTP/1.1" 302 0
-[27/Jun/2017 14:32:10] "GET /admin/elections/candidate/ HTTP/1.1" 200 4847
-[27/Jun/2017 14:32:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:32:17] "GET / HTTP/1.1" 200 1444
-[27/Jun/2017 14:32:27] "GET /admin/elections/candidate/3/change/ HTTP/1.1" 200 7121
-[27/Jun/2017 14:32:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:32:30] "POST /admin/elections/candidate/3/change/ HTTP/1.1" 302 0
-[27/Jun/2017 14:32:31] "GET /admin/elections/candidate/ HTTP/1.1" 200 4847
-[27/Jun/2017 14:32:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:32:33] "GET / HTTP/1.1" 200 1444
-/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 14:32:34.998080) while time zone support is active.
-  RuntimeWarning)
-
-/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 14:32:34.998080) while time zone support is active.
-  RuntimeWarning)
-
-[27/Jun/2017 14:32:35] "GET /areas/Fruit/ HTTP/1.1" 200 551
-[27/Jun/2017 14:33:18] "GET /admin/elections/ HTTP/1.1" 200 3066
-[27/Jun/2017 14:33:20] "GET /admin/ HTTP/1.1" 200 6356
-[27/Jun/2017 14:33:22] "GET /admin/elections/poll/ HTTP/1.1" 200 4349
-[27/Jun/2017 14:33:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:33:25] "GET /admin/elections/poll/add/ HTTP/1.1" 200 6759
-[27/Jun/2017 14:33:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:33:39] "POST /admin/elections/poll/add/ HTTP/1.1" 302 0
-[27/Jun/2017 14:33:39] "GET /admin/elections/poll/ HTTP/1.1" 200 4577
-[27/Jun/2017 14:33:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:33:42] "GET / HTTP/1.1" 200 1444
-/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 14:33:43.921192) while time zone support is active.
-  RuntimeWarning)
-
-/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1453: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 14:33:43.921192) while time zone support is active.
-  RuntimeWarning)
-
-[27/Jun/2017 14:33:43] "GET /areas/Fruit/ HTTP/1.1" 200 1648
-[27/Jun/2017 14:33:45] "POST /polls/2/ HTTP/1.1" 302 0
-[27/Jun/2017 14:33:45] "GET /areas/Fruit/results HTTP/1.1" 200 930
-[27/Jun/2017 14:33:50] "POST /polls/2/ HTTP/1.1" 302 0
-[27/Jun/2017 14:33:50] "GET /areas/Fruit/results HTTP/1.1" 200 930
-[27/Jun/2017 14:33:52] "GET /admin/elections/poll/1/change/ HTTP/1.1" 200 7041
-[27/Jun/2017 14:33:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:33:54] "GET /admin/elections/poll/ HTTP/1.1" 200 4577
-[27/Jun/2017 14:33:56] "GET /admin/elections/poll/add/ HTTP/1.1" 200 6759
-[27/Jun/2017 14:33:57] "GET /admin/elections/poll/ HTTP/1.1" 200 4577
-[27/Jun/2017 14:34:00] "GET /admin/ HTTP/1.1" 200 6645
-[27/Jun/2017 14:34:03] "GET /admin/elections/choice/ HTTP/1.1" 200 4834
-[27/Jun/2017 14:34:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:34:04] "GET /admin/elections/choice/1/change/ HTTP/1.1" 200 8136
-[27/Jun/2017 14:34:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:34:06] "GET /admin/elections/choice/ HTTP/1.1" 200 4834
-[27/Jun/2017 14:34:07] "GET /admin/elections/choice/2/change/ HTTP/1.1" 200 8136
-[27/Jun/2017 14:34:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:34:08] "GET /admin/elections/choice/ HTTP/1.1" 200 4834
-[27/Jun/2017 14:34:09] "GET /admin/elections/choice/3/change/ HTTP/1.1" 200 8136
-[27/Jun/2017 14:34:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 14:34:11] "GET /admin/elections/choice/ HTTP/1.1" 200 4834
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 14:27:31
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-Internal Server Error: /areas/Fruit/results
+Unhandled exception in thread started by <function wrapper at 0x7f2113e4ade8>
 Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 55, in results
-    total_votes = Choice.objects.filter(poll_id = poll_id).aggregate(Sum('votes'))
-NameError: global name 'poll_id' is not defined
-[27/Jun/2017 15:18:46] "GET /areas/Fruit/results HTTP/1.1" 500 70077
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 15:16:18
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-[27/Jun/2017 15:25:12] "POST /polls/2/ HTTP/1.1" 302 0
-Internal Server Error: /areas/Fruit/results
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 56, in results
-    result[total_votes] = total_votes['votes__sum']
-TypeError: unhashable type: 'dict'
-[27/Jun/2017 15:25:12] "GET /areas/Fruit/results HTTP/1.1" 500 70145
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 15:25:08
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-[27/Jun/2017 15:25:49] "POST /polls/2/ HTTP/1.1" 302 0
-Internal Server Error: /areas/Fruit/results
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 73, in results
-    return render(request, 'elections/result.html', context)
-  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
-    return engine.get_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
-    return Template(self.engine.get_template(template_name, dirs), self)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
-    name, template_dirs=dirs, skip=skip,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
-    contents, origin, origin.template_name, self.engine,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
-    return parser.parse()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 508, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 568, in invalid_block_tag
-    "or load this tag?" % (token.lineno, command)
-TemplateSyntaxError: Invalid block tag on line 34: 'endfor'. Did you forget to register or load this tag?
-[27/Jun/2017 15:25:49] "GET /areas/Fruit/results HTTP/1.1" 500 130742
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 15:25:46
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-[27/Jun/2017 15:26:58] "POST /polls/2/ HTTP/1.1" 302 0
-Internal Server Error: /areas/Fruit/results
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 73, in results
-    return render(request, 'elections/result.html', context)
-  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
-    return engine.get_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
-    return Template(self.engine.get_template(template_name, dirs), self)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
-    name, template_dirs=dirs, skip=skip,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
-    contents, origin, origin.template_name, self.engine,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
-    return parser.parse()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 508, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 568, in invalid_block_tag
-    "or load this tag?" % (token.lineno, command)
-TemplateSyntaxError: Invalid block tag on line 34: 'endfor'. Did you forget to register or load this tag?
-[27/Jun/2017 15:26:58] "GET /areas/Fruit/results HTTP/1.1" 500 130961
-[27/Jun/2017 15:28:18] "POST /polls/2/ HTTP/1.1" 302 0
-Internal Server Error: /areas/Fruit/results
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 73, in results
-    return render(request, 'elections/result.html', context)
-  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
-    return engine.get_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
-    return Template(self.engine.get_template(template_name, dirs), self)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
-    name, template_dirs=dirs, skip=skip,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
-    contents, origin, origin.template_name, self.engine,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
-    return parser.parse()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 508, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 568, in invalid_block_tag
-    "or load this tag?" % (token.lineno, command)
-TemplateSyntaxError: Invalid block tag on line 34: 'endfor'. Did you forget to register or load this tag?
-[27/Jun/2017 15:28:19] "GET /areas/Fruit/results HTTP/1.1" 500 130965
-[27/Jun/2017 15:29:34] "POST /polls/2/ HTTP/1.1" 302 0
-Internal Server Error: /areas/Fruit/results
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 73, in results
-    return render(request, 'elections/result.html', context)
-  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 67, in render
-    template_name, context, request=request, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 96, in render_to_string
-    template = get_template(template_name, using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 32, in get_template
-    return engine.get_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/backends/django.py", line 40, in get_template
-    return Template(self.engine.get_template(template_name, dirs), self)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 190, in get_template
-    template, origin = self.find_template(template_name, dirs)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/engine.py", line 157, in find_template
-    name, template_dirs=dirs, skip=skip,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loaders/base.py", line 46, in get_template
-    contents, origin, origin.template_name, self.engine,
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 189, in __init__
-    self.nodelist = self.compile_nodelist()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 230, in compile_nodelist
-    return parser.parse()
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 508, in parse
-    self.invalid_block_tag(token, command, parse_until)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/base.py", line 568, in invalid_block_tag
-    "or load this tag?" % (token.lineno, command)
-TemplateSyntaxError: Invalid block tag on line 34: 'endfor'. Did you forget to register or load this tag?
-[27/Jun/2017 15:29:34] "GET /areas/Fruit/results HTTP/1.1" 500 130873
-[27/Jun/2017 15:30:24] "POST /polls/2/ HTTP/1.1" 302 0
-[27/Jun/2017 15:30:24] "GET /areas/Fruit/results HTTP/1.1" 200 946
-[27/Jun/2017 15:30:31] "POST /polls/2/ HTTP/1.1" 302 0
-[27/Jun/2017 15:30:32] "GET /areas/Fruit/results HTTP/1.1" 200 946
-[27/Jun/2017 15:31:30] "GET /admin/ HTTP/1.1" 200 6645
-[27/Jun/2017 15:31:33] "GET /admin/elections/poll/ HTTP/1.1" 200 4577
-[27/Jun/2017 15:31:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 15:31:39] "GET /admin/elections/poll/add/ HTTP/1.1" 200 6759
-[27/Jun/2017 15:31:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 15:32:10] "POST /admin/elections/poll/add/ HTTP/1.1" 302 0
-[27/Jun/2017 15:32:11] "GET /admin/elections/poll/ HTTP/1.1" 200 4804
-[27/Jun/2017 15:32:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
-[27/Jun/2017 15:32:13] "GET /areas/Fruit/results HTTP/1.1" 200 1103
-Not Found: /accounts/login
-[27/Jun/2017 16:01:52] "GET /accounts/login HTTP/1.1" 404 2847
-[27/Jun/2017 16:02:03] "GET / HTTP/1.1" 200 1444
-Not Found: /account/login
-[27/Jun/2017 16:45:36] "GET /account/login HTTP/1.1" 404 2844
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 15:26:55
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 16:46:30
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 17:05:33
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-Not Found: /login
-[27/Jun/2017 17:21:02] "GET /login HTTP/1.1" 404 2820
-Not Found: /accounts/login
-[27/Jun/2017 17:21:27] "GET /accounts/login HTTP/1.1" 404 2847
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 17:20:52
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-/usr/local/lib/python2.7/dist-packages/django/shortcuts.py:45: RemovedInDjango110Warning: The context_instance argument of render_to_string is deprecated.
-  using=using)
-
-Internal Server Error: /accounts/login
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/ubuntu/workspace/elections/views.py", line 93, in login
-    return render_to_response('login.html', locals(), RequestContext(request))
-  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 45, in render_to_response
-    using=using)
-  File "/usr/local/lib/python2.7/dist-packages/django/template/loader.py", line 137, in render_to_string
-    raise TemplateDoesNotExist(template_name, chain=chain)
-TemplateDoesNotExist: login.html
-[27/Jun/2017 17:21:56] "GET /accounts/login HTTP/1.1" 500 80268
-Performing system checks...
-
-System check identified no issues (0 silenced).
-June 27, 2017 - 17:21:55
-Django version 1.9, using settings 'database_project.settings'
-Starting development server at http://0.0.0.0:8080/
-Quit the server with CONTROL-C.
-Unhandled exception in thread started by <function wrapper at 0x7f1d85031758>
-Performing system checks...
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 226, in wrapper
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
     fn(*args, **kwargs)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 116, in inner_run
-    self.check(display_num_errors=True)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/management/base.py", line 426, in check
-    include_deployment_checks=include_deployment_checks,
-  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/registry.py", line 75, in run_checks
-    new_errors = check(app_configs=app_configs)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 10, in check_url_config
-    return check_resolver(resolver)
-  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 27, in check_resolver
-    warnings.extend(check_pattern_startswith_slash(pattern))
-  File "/usr/local/lib/python2.7/dist-packages/django/core/checks/urls.py", line 63, in check_pattern_startswith_slash
-    regex_pattern = pattern.regex.pattern
-AttributeError: 'str' object has no attribute 'regex'
+  File "/usr/local/lib/python2.7/dist-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 250, in raise_last_exception
+    six.reraise(*_exception)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/autoreload.py", line 227, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/ubuntu/workspace/elections/models.py", line 32, in <module>
+    admin.site.register(User)
+NameError: name 'admin' is not defined
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2017 - 21:15:00
+Django version 1.11.2, using settings 'database_project.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[27/Jun/2017 21:15:15] "GET /admin/ HTTP/1.1" 200 7331
+[27/Jun/2017 21:15:20] "GET /admin/elections/user/ HTTP/1.1" 200 4644
+[27/Jun/2017 21:15:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:15:23] "GET /admin/elections/user/lee/change/ HTTP/1.1" 200 6065
+[27/Jun/2017 21:15:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:15:23] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[27/Jun/2017 21:15:23] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[27/Jun/2017 21:15:27] "GET /admin/elections/user/ HTTP/1.1" 200 4644
+[27/Jun/2017 21:15:30] "GET /admin/ HTTP/1.1" 200 7331
+/usr/local/lib/python2.7/dist-packages/django/template/defaulttags.py:66: UserWarning: A {% csrf_token %} was used in a template, but the context did not provide the value.  This is usually caused by not using RequestContext.
+  "A {% csrf_token %} was used in a template, but the context "
+[27/Jun/2017 21:17:02] "GET /accounts/signup HTTP/1.1" 200 794
+[27/Jun/2017 21:17:02] "GET /static/css/bootstrap.css HTTP/1.1" 404 1791
+[27/Jun/2017 21:18:43] "GET /accounts/signup HTTP/1.1" 200 1048
+[27/Jun/2017 21:18:44] "GET /static/css/bootstrap.css HTTP/1.1" 404 1791
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2017 - 21:15:06
+Django version 1.11.2, using settings 'database_project.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[27/Jun/2017 21:19:57] "POST /accounts/create HTTP/1.1" 302 0
+[27/Jun/2017 21:19:58] "GET / HTTP/1.1" 200 1444
+[27/Jun/2017 21:20:01] "GET /admin/elections/user/ HTTP/1.1" 200 4877
+[27/Jun/2017 21:20:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:20:02] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[27/Jun/2017 21:20:04] "GET /admin/elections/user/lee/change/ HTTP/1.1" 200 6065
+[27/Jun/2017 21:20:04] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[27/Jun/2017 21:20:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:20:04] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[27/Jun/2017 21:20:06] "GET /admin/elections/user/ HTTP/1.1" 200 4877
+[27/Jun/2017 21:20:07] "GET /admin/elections/user/asdf/change/ HTTP/1.1" 200 6072
+[27/Jun/2017 21:20:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:20:10] "GET /admin/elections/user/ HTTP/1.1" 200 4877
+[27/Jun/2017 21:20:12] "GET /admin/elections/user/John/change/ HTTP/1.1" 200 6069
+[27/Jun/2017 21:20:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:20:16] "GET /admin/elections/user/ HTTP/1.1" 200 4877
+[27/Jun/2017 21:20:19] "GET /admin/ HTTP/1.1" 200 7331
+[27/Jun/2017 21:20:21] "GET /admin/elections/candidate/ HTTP/1.1" 200 4673
+[27/Jun/2017 21:20:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:20:26] "GET /admin/ HTTP/1.1" 200 7331
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2017 - 21:19:36
+Django version 1.11.2, using settings 'database_project.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[27/Jun/2017 21:21:25] "GET /admin/ HTTP/1.1" 200 7331
+[27/Jun/2017 21:21:27] "GET /admin/elections/user/ HTTP/1.1" 200 4855
+[27/Jun/2017 21:21:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:21:34] "GET /admin/elections/user/John/change/ HTTP/1.1" 200 6058
+[27/Jun/2017 21:21:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[27/Jun/2017 21:21:40] "GET /admin/elections/user/ HTTP/1.1" 200 4855
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2017 - 21:21:20
+Django version 1.11.2, using settings 'database_project.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[27/Jun/2017 21:21:56] "GET /admin/elections/user/ HTTP/1.1" 200 4847
+[27/Jun/2017 21:21:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 21:22:31.899182) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 21:22:31.899182) while time zone support is active.
+  RuntimeWarning)
+[27/Jun/2017 21:22:31] "GET /areas/USA/ HTTP/1.1" 200 1262
+[27/Jun/2017 21:22:35] "POST /polls/1/ HTTP/1.1" 302 0
+[27/Jun/2017 21:22:35] "GET /areas/USA/results HTTP/1.1" 200 870
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Poll.start_date received a naive datetime (2017-06-27 21:25:00.470909) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1451: RuntimeWarning: DateTimeField Poll.end_date received a naive datetime (2017-06-27 21:25:00.470909) while time zone support is active.
+  RuntimeWarning)
+[27/Jun/2017 21:25:00] "GET /areas/USA/ HTTP/1.1" 200 1262
+[27/Jun/2017 21:25:06] "POST /polls/1/ HTTP/1.1" 302 0
+[27/Jun/2017 21:25:06] "GET /areas/USA/results HTTP/1.1" 200 870
+Performing system checks...
+
+System check identified no issues (0 silenced).
+June 27, 2017 - 21:21:53
+Django version 1.11.2, using settings 'database_project.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.

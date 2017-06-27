@@ -25,7 +25,7 @@ SECRET_KEY = '9!c!vo0-j4*opake^#-!1$$+*zepx$%+j2g_vs^faav^g2anyi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'database-project-alexsungmin.c9users.io']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
@@ -88,6 +88,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
 
 
 # Password validation
