@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import Candidate, Poll, Choice
+from .models import Product, Poll, Choice
 # Register your models here.
 
 
 
-admin.site.register(Candidate)
+admin.site.register(Product)
 admin.site.register(Poll)
 admin.site.register(Choice)

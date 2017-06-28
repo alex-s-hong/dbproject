@@ -16,30 +16,33 @@
     <table class="table table-striped">
         <thead>
         <tr>
-            <td><B>이름</B></td>
+            <td><B>상품명</B></td>
             <td><B>소개</B></td>
-            <td><B>기호</B></td>
-            <td><B>지지하기</B></td>
-        </tr>
+            <td><B>가격</B></td>
+            <td><B>좋아요</B></td>
+            <td><B>구매하기</B></td>
         </thead>
         <tbody>
-        {% for candidate in candidates %}
+        {% for product in products %}
         <tr>
-            <td> {{candidate.name}}</td>
-            <td> {{candidate.introdution}} </td>
-            <td> 기호{{candidate.party_number}}번 </td>
+            <td> {{product.name}}</td>
+            <td> {{product.introdution}} </td>
+            <td> {{product.price}}원 </td>
             <td>
                 <form action = "/polls/{{poll.id}}/" method="post">
                 {% csrf_token %}
-                    <button name="choice" value="{{candidate.id}}">선택</button>
+                    <button name="choice" value="{{product.id}}">선택</button>
                 </form>
+            </td>
+            <td>
+                <button name="purchase" value="{{product.id}}">구입</button> 
             </td>
         </tr>
         {% endfor %}
         </tbody>
 </table>
 {% else %}
-여론조사가 없습니다.
+현재 판매가 불가능합니다.
 {% endif %}
 </div>
 </body>

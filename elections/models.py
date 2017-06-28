@@ -5,15 +5,6 @@ from django.contrib import admin
 
 # Create your models here.
 
-class Candidate(models.Model):
-    name = models.CharField(max_length=10)
-    introduction = models.TextField()
-    area = models.CharField(max_length=15)
-    party_number = models.IntegerField(default=1)
-    
-    
-    def __str__(self):
-       return self.name
 
 class Poll (models.Model):
 	start_date = models.DateTimeField()
@@ -26,6 +17,7 @@ class User(models.Model):
     name = models.CharField(max_length=64)
     email = models.CharField(max_length=255)
     authority = models.IntegerField(default=1)
+    balance = models.IntegerField(default = 1000)
     # user_birth_month = models.IntegerField()
     # user_birth_day = models.IntegerField()
     # user_birth_year = models.IntegerField()
@@ -35,18 +27,28 @@ class User(models.Model):
 admin.site.register(User)
 
 
+class Product(models.Model):
+    name = models.CharField(max_length=10)
+    introduction = models.TextField(null = True)
+    area = models.CharField(max_length=15)
+    price = models.IntegerField(default=100)
+  # seller = models.ForeignKey(User)
+    
+    def __str__(self):
+      return self.name
+
+
+class Purchase (models.Model):
+    product = models.ForeignKey(Product, on_delete = models.CASCADE)
+    #buyer = models.ForeignKey(User, on_delete = models.CASCADE)
+    time = models.DateTimeField()
+
 class Choice (models.Model):
 	poll = models.ForeignKey(Poll)
-	candidate = models.ForeignKey(Candidate)
+	product = models.ForeignKey(Product)
 	votes = models.IntegerField(default=0)
 	
-class Product (models.Model):
-    name= models.CharField(max_length=10)
-    introuduction= models.TextField()
-    seller= models.ForeignKey(User)
-    price = models.IntegerField()
+
     
-class Wallet (models.Model):
-    owner = models.ForeignKey(User)
-    balance = models.IntegerField()
+
     

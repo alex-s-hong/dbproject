@@ -2,7 +2,7 @@
 from django.shortcuts import render, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse
-from .models import Candidate, Poll, Choice, User
+from .models import Poll, User, Choice, Purchase, Product
 from django.views.decorators.csrf import csrf_exempt
 import datetime
 from django.db.models import Sum
@@ -11,13 +11,13 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import auth
 from django.contrib.auth.models import User as auth_user
 from django.template.context import RequestContext
-
+from django.db import transaction
 
 @csrf_exempt
-# Create your views here
+
 def index(request):
-	candidates = Candidate.objects.all()
-	context = {'candidates': candidates}
+	products = Product.objects.all()
+	context = {'products': products}
 	return render(request, 'elections/index.html', context)
 
 @csrf_exempt
@@ -26,11 +26,11 @@ def areas(request, area):
 	try:
 		poll = Poll.objects.get(area = area, start_date__lte=
 			today, end_date__gte=today)
-		candidates = Candidate.objects.filter(area = area)
+		products = Product.objects.filter(area = area)
 	except:
 		poll = None
-		candidates = None	
-	context = {'candidates': candidates,
+		products = None	
+	context = {'products': products,
 	'area': area,
 	'poll': poll}
 	return render(request,'elections/area.html',context)
@@ -43,18 +43,29 @@ def polls(request,poll_id):
 	
 
 	try:
-		choice = Choice.objects.get(poll_id = poll_id, candidate_id = selection)
+		choice = Choice.objects.get(poll_id = poll_id, product_id = selection)
 		choice.votes +=1
 		choice.save()
 	except:
-		choice = Choice(poll_id = poll_id, candidate_id = selection, votes = 1)
+		choice = Choice(poll_id = poll_id, product_id = selection, votes = 1)
 		choice.save()
 
 	return HttpResponseRedirect("/areas/{}/results".format(poll.area))
+
+@csrf_exempt
+@transaction.atomic
+def payment(request, product):
+	product = Purchase.objects.get(product_id = product.id)
+	buyer = request.POST['purchase']
+	
+	purchase = Purchase.objects.get(product_id = product.id, buyer = request.user.username)
+	
+	
+	
 	
 @csrf_exempt
 def results(request, area):
-    candidates = Candidate.objects.filter(area = area)
+    products = Product.objects.filter(area = area)
 
     polls = Poll.objects.filter(area = area)
     #poll과 result 합쳐서 하나로 표현하기 
@@ -67,9 +78,9 @@ def results(request, area):
         result['total_votes'] = total_votes['votes__sum']
         
         rates = []
-        for candidate in candidates:
+        for product in products:
         	try:
-	        	choice = Choice.objects.get(poll_id = poll.id, candidate_id = candidate.id)
+	        	choice = Choice.objects.get(poll_id = poll.id, product_id = product.id)
 	        	rates.append(
 	        		round(choice.votes * 100/result['total_votes'],2)
 	        		)
@@ -78,7 +89,7 @@ def results(request, area):
         result['rates'] = rates
         poll_results.append(result)
    
-    context = {'candidates': candidates, 'area' :area,
+    context = {'products': products, 'area' :area,
     'poll_results': poll_results}     
         
     return render(request, 'elections/result.html', context)
@@ -132,3 +143,6 @@ def create(request):
 	user = auth.authenticate(username=request.POST['username'], password=request.POST['password'])
 	auth.login(request, user)
 	return HttpResponseRedirect(request.POST.get('next', '/') or '/')
+
+
+
