@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{area}} 구매 결과</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>{{area}}</h1>
+<br>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <td><B>구매가 완료되었습니다.</B></td>
+        {% for product in products %}
+        <td><B>{{product.name}}</B></td>
+        {% endfor %}        
+    </tr>
+    </thead>
+    <tbody>
+   
+    <tbody>
+</table>
+</div>
+</body>

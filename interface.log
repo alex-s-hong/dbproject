@@ -455,3 +455,10 @@ ProgrammingError: (1146, "Table 'c9.elections_product' doesn't exist")
 [28/Jun/2017 17:36:51] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
 [28/Jun/2017 17:36:51] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
 [28/Jun/2017 17:36:51] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[28/Jun/2017 19:02:00] "GET /accounts/login HTTP/1.1" 200 739
+[28/Jun/2017 19:02:01] "GET /static/css/bootstrap.css HTTP/1.1" 404 1791
+[28/Jun/2017 19:05:09] "GET /accounts/login HTTP/1.1" 200 743
+[28/Jun/2017 19:05:09] "GET /static/css/bootstrap.css HTTP/1.1" 404 1791
+[28/Jun/2017 19:09:47] "GET /accounts/signup HTTP/1.1" 200 1048
+[28/Jun/2017 19:09:48] "GET /static/css/bootstrap.css HTTP/1.1" 404 1791
+[28/Jun/2017 19:09:51] "GET /static/css/bootstrap.css HTTP/1.1" 404 1791
